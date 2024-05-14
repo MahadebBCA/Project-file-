@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Changing Boxes</title>
+<style>
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    align-self: right;
+    
+    
+  }
+  .box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 2px solid #CAEE6D;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-weight:bold;
+    font-size: 20px;
+  }
+  #changeColors{
+    margin-left: 30%;
+    height:40px;
+    width:auto;
+    font-weight:bold;
+    font-size: 20px;
+    
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box">ColorBox</div>
+  <div class="box">CamalCase</div>
+  <div class="box">JavaScript </div>
+</div><br> 
+<div class="container">
+  <div class="box">HTML</div>
+  <div class="box">CSS</div>
+  <div class="box">Logic </div>
+</div>
+ 
+<div class="container">
+  <div class="box">Mahadeb</div>
+  <div class="box">Devolop</div>
+  <div class="box">Moment </div>
+</div><br> 
+<div class="container">
+  <div class="box">Trying</div>
+  <div class="box">Best </div>
+  <div class="box">populer </div>
+</div>
+<div class="container">
+  <div class="box">ColorBox</div>
+  <div class="box">CamalCase</div>
+  <div class="box">JavaScript </div>
+</div><br>
+<button id="changeColors">Change Colors</button>
+
+<script>
+  const boxes = document.querySelectorAll(".box");
+
+  function getRandomColor() {
+    let val1 = Math.ceil(0 + Math.random() * 255);
+    let val2 = Math.ceil(0 + Math.random() * 255);
+    let val3 = Math.ceil(0 + Math.random() * 255);
+    return `rgb(${val1}, ${val2}, ${val3})`;
+  }
+
+ 
+  document.getElementById("changeColors").addEventListener("click", function() {
+    boxes.forEach(box => {
+      box.style.color = getRandomColor();
+      box.style.backgroundColor = getRandomColor();
+    });
+  });
+  
+  let buttons = document.querySelectorAll("#changeColors");
+
+buttons.forEach(button => {
+  button.style.color = getRandomColor();
+});
+
+</script>
+
+</body>
+</html>
