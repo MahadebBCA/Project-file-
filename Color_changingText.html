@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyframe Text Animation</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .animation-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* height: 10vh;*/
+      background-color: #fff;
+    }
+
+    .animated-text {
+      font-size: 4em;
+      animation: colorChange 3s infinite alternate;
+      margin-top: 0px;
+      margin: 20%;
+    }
+
+    @keyframes colorChange {
+      0% {
+        color: blue;
+      }
+
+      15% {
+        color: #FF00E4;
+      }
+
+      25% {
+        color: green;
+      }
+
+      35% {
+        color: yellow;
+      }
+
+      50% {
+        color: red;
+      }
+
+      75% {
+        color: orange;
+      }
+
+      90% {
+        color: pink;
+      }
+
+      100% {
+        color: purple;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="animation-container">
+    <h1 class="animated-text">Welcome! <br>MAHADEB <br> To our <br> coding <br> platform</h1>
+  </div>
+<!-- <script src="script.js"></script>-->
+</body>
+
+</html>
