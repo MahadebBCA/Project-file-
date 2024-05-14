@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> circle </title>
+  <style>
+    .circle {
+      height: 250px;
+      width: 250px;
+      border: 2px solid gray;
+      border-radius: 50%;
+      margin-left: 15%;
+      margin-top: 15%;
+      background: conic-gradient(violet, indigo, blue, green, yellow, orange, red, violet);
+      animation: anime 2s linear infinite;
+
+    }
+
+    @keyframes anime {
+      100% {
+        rotate: 360deg;
+      }
+    }
+
+    .circle2 {
+      height: 250px;
+      width: 250px;
+      border: 2px solid gray;
+      border-radius: 50%;
+      margin-left: 15%;
+      margin-top: 15%;
+      background: conic-gradient(green, white, orange, green, white, orange, green);
+      animation: anime 2s linear infinite reverse;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="circle"> </div>
+  <div class="circle2"> </div>
+</body>
+
+</html>
