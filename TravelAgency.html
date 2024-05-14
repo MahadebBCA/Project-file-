@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Travel agency Website </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/Traveling website/code/travel_agency.css ">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href=" /Traveling website/code/Travel.js">
+</head>
+
+<body>
+
+  <!-- Outer Navigation Bar -->
+
+  <nav class="navbar bg-body-tertiary m-0 p-0  fixed-top">
+    <div class=" container-fluid first-navbar ">
+
+      <h3 class="navbar-brand " id="Name">
+        <i class="bi bi-amd m-2 " style=" color: rgba(236, 106, 16, 0.9)">
+        </i>
+
+        <span class="I"> I
+          <span class="n"> n
+            <span class="d"> d
+              <span class="i"> i
+                <span class="a"> a
+                  <span class="n"> n
+                    &nbsp;
+                    <span class="T"> T
+                      <span class="r"> r
+                        <span class="a"> a
+                          <span class="V"> V
+                            <span class="e"> e
+                              <span class="l"> l
+                                <span class="s"> s
+      </h3>
+
+      <!-- offcanvus -->
+      <button class="btn  btn-primary text-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Tap Travels</button>
+
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <!-- Search button -->
+          <div class="search">
+            </form>
+            <div class="offcanvas-body">
+              <form class="d-flex " role="search">
+                <input class="form-control me-2 input border-success" type="search" placeholder=" Search your tourists spots" aria-label="Search">
+                <button class="btn btn-outline-primary m-0 pl-0 text-large" type="submit"><i class="bi bi-search-heart"></i> </button>
+                &nbsp;
+                <button type="button" class="btn btn-primary"> Sign in </button>
+              </form>
+            </div>
+
+
+
+            <!-- Button to open the modal login form -->
+            <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+            <!-- The Modal -->
+            <div id="id01" class="modal">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+              <!-- Modal Content -->
+              <form class="modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                  <img src="img_avatar2.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                </div>
+
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </nav>
+
+
+
+  <!-- Inner Navigation Bar -->
+
+  <div class="Container-fluid ">
+    <div class="row">
+      <div class="col-12">
+
+        <div class="navbar">
+          <a> <i class="bi bi-amd m-2 " style=" color: rgba(236, 106, 16, 0.9)">
+            </i>
+          </a>
+          <a class="active" href="#"><i class="bi bi-house-door"></i> Home</a>
+          <a href="#"> <i class="bi bi-google"></i> Search</a>
+          <a href="#"> <i class="bi bi-file-earmark-person"></i> About us</a>
+          <a href="#"> <i class="bi bi-car-front-fill"></i> About Bus</a>
+          <a href="#"><i class="bi bi-person-lines-fill"></i> Contact</a>
+          <a href="#"> <i class="bi bi-envelope-exclamation"></i> Login</a>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <!--slide show -->
+
+  <div id="carouselExampleDark" class="carousel mh-100p w-100 slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active third " data-bs-interval="10000">
+
+        <a href="https://getbootstrap.com/docs/5.3/components/carousel/"> <img src="/Traveling website/images/Darjeeling.jpg " class="d-block w-100" alt="..."></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="slide"> Darjeeling Beautiful places </h2>
+
+        </div>
+      </div>
+      <div class="carousel-item Third " data-bs-interval="2000">
+        <a href=" https://getbootstrap.com/docs/5.3/components/carousel/"> <img src=" /Traveling website/images/m_activities-jodhpur-jaswant-thada_l_400_640.jpg" class="d-block w-100" alt="...">
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+
+          <h2 class="slide">Jodhpur Jaswant thada </h2>
+
+        </div>
+      </div>
+      <div class="carousel-item Third ">
+        <a href=" https://getbootstrap.com/docs/5.3/components/carousel/"> <img src=" /Traveling website/images/cover-waterfalls-in-west-bengal.jpg" class="d-block w-100 mh-80" alt="..."> </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class=" slide"> western water falls</h2>
+
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--  dialogue  for advanced bookings -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 ">
+        <marquee behavior="scroll" direction="left">
+          <h3 class="dialogue">
+            Advanced Booking For Discounts & Traveling Before 30 days otherwise 20 days
+
+          </h3>
+        </marquee>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn mb-5 mt-4 btn-primary btn-center" type="button">
+            <h3 class="text-center mt-2"> BOOK NOW </h3>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Drop down -->
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="dropup mb-5 mt-5 ms-5 col-sm-5">
+          <button class="btn btn-lg btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Best tourists spots
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <h3> Top 10 tourists place in West Bengal </h3>
+            <li><a class="dropdown-item active" href="#"> Victoria memorials hall(Kolkata) </a></li>
+            <li><a class="dropdown-item" href="#"> Kanchan jangha (sikim)
+                Kanchenjunga
+              </a></li>
+            <li><a class="dropdown-item" href="#"> Darjeeling_Tiger_Hill_Main</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#"> Kalimpang </a></li>
+
+            <li><a class="dropdown-item" href="#"> Nabadwip </a></li>
+
+            <li><a class="dropdown-item" href="#">Mursidabad </a></li>
+            <li><a class="dropdown-item" href="#"> padmaja naida </a></li>
+            <li><a class="dropdown-item" href="#"> park street</a></li>
+            <li><a class="dropdown-item" href="#">Eden Gardens </a></li>
+          </ul>
+
+        </div>
+        <!-- Drop down -->
+        <div class="dropdown mb-5 mt-5 ms-5 col-sm-5">
+          <button class="btn btn-lg btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Best tourists spots
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <h3> Top 10 tourists place in West Bengal </h3>
+            <li><a class="dropdown-item active" href="#"> Victoria memorials hall(Kolkata) </a></li>
+            <li><a class="dropdown-item" href="#"> Kanchan jangha (sikim)
+                Kanchenjunga
+              </a></li>
+            <li><a class="dropdown-item" href="#"> Darjeeling_Tiger_Hill_Main</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#"> Kalimpang </a></li>
+
+            <li><a class="dropdown-item" href="#"> Nabadwip </a></li>
+
+            <li><a class="dropdown-item" href="#">Mursidabad </a></li>
+            <li><a class="dropdown-item" href="#"> padmaja naida </a></li>
+            <li><a class="dropdown-item" href="#"> park street</a></li>
+            <li><a class="dropdown-item" href="#">Eden Gardens </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- beautiful place card using bootstrap -->
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <a href="https://www.google.com/search?client=ms-android-xiaomi-rvo2b&sca_esv=602301773&sxsrf=ACQVn0-mAmRwfvcEk1nyBSDxRup-0hqsxQ:1706521845331&q=Himalayan+tourism&tbm=isch&source=lnms&prmd=ivnsmbtz&sa=X&ved=2ahUKEwiTuJGjqYKEAxWkxTgGHWhHAuwQ0pQJegQIDxAB&biw=393&bih=767&dpr=2.75"> <img src="/Traveling website/images/cover-waterfalls-in-west-bengal.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h3 class="card-title"> Himalayan beauty places</h3>
+          <p class="card-text">
+            10% discount, (term- conditions-
+            30% discount for Advanced bookings ) & ₹- 5,000 (with Stay,Eat , travel )
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <a href=" https://www.google.com/search?q=hundru+waterfalls&tbm=isch&ved=2ahUKEwjzi7X0qYKEAxVqT2wGHWnUA-AQ2-cCegQIABAD&oq=hudruwaterfalls&gs_lcp=ChJtb2JpbGUtZ3dzLXdpei1pbWcQARgAMgcIIxCwAhAnMgcIABCABBANMgcIABCABBANMgcIABCABBANMgcIABCABBANOgQIIxAnOggIABCABBCiBDoNCAAQgAQQigUQQxCxAzoKCAAQgAQQigUQQzoQCAAQgAQQigUQQxCxAxCDAToFCAAQgAQ6BggAEAcQHjoICAAQCBAHEB5Qmw1YrShgmjFoAHAAeACAAbwEiAGrE5IBCTAuMS44LjUtMZgBAKABAcABAQ&sclient=mobile-gws-wiz-img&ei=n3W3ZbPAL-qeseMP6aiPgA4&bih=767&biw=393&client=ms-android-xiaomi-rvo2b&prmd=ivmnsbtz"> <img src="/Traveling website/images/IMG_20240129_103429.png" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h3 class="card-title">Hudru Waterfall </h3>
+          <p class="card-text">
+            10% discount, (term- conditions-
+            30% discount for Advanced bookings ) & ₹- 5,000 (with Stay,Eat , travel )
+            .</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="/Traveling website/images/queen-of-hills.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">
+            Queen👑 of hill <h3>
+              <p class="card-text">
+                10% discount, (term- conditions-
+                30% discount for Advanced bookings ) & ₹- 5,000 (with Stay,Eat , travel )
+              </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="/Traveling website/images/Victoria-Memorial-Hall-Kolkata-India-West-Bengal.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title"> Victoria memorials hall </h3>
+          <p class="card-text">
+            10% discount, (term- conditions-
+            30% discount for Advanced bookings ) & ₹- 5,000 (with Stay,Eat , travel )
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="/Traveling website/images/nabadwip-4fcd3fcce44d78692f22e016.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title"> Nabadwip dham </h3>
+          <p class="card-text">
+            10% discount, (term- conditions-
+            30% discount for Advanced bookings ) & ₹- 5,000 (with Stay,Eat , travel )
+            .</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="/Traveling website/images/khandadhar-falls.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title"> Khandadhar water falls </h3>
+          <p class="card-text">
+            10% discount, (term- conditions-
+            30% discount for Advanced bookings ) & ₹- 5,000 (with Stay,Eat , travel )
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="/Traveling website/images/hazarduari-palace-museum.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Hazarduari museum</h3>
+          <p class="card-text">
+            10% discount, (term- conditions-
+            30% discount for Advanced bookings ) & ₹- 5,000 (with Stay,Eat , travel )
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src=" /Traveling website/images/64690286Darjeeling_Tiger_Hill_Main.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title"> Darjeeling - Tiger Hill </h3>
+          <p class="card-text">
+            10% discount, (term- conditions-
+            30% discount for Advanced bookings ) & ₹- 5,000 (with Stay,Eat , travel )
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  Footer section -->
+
+  <div class="container-fluid bg-secondary text-center d-flex justify-content-between ">
+    <div class="row d-flex  justify-content-evenly m-5">
+      <div class="col-sm-3">
+        <h2>  Travel agency  </h2>
+        <p> INDIAN TRAVELS </p>
+        <p> Best drivers, with discount,  Ac super bus, beautiful seat capacity</p>
+      </div>
+       <div class="col-sm-3"> 
+       <h2> junior Devoloper(Freshers) -Mahir , Developer tools</h2>
+       <ul type="none"> 
+       <li><h1 class="bi bi-filetype-html"></h1> </li>
+        <li><h1 class="bi bi-filetype-js"></h1> </li>
+        <li> <h1 class="bi bi-filetype-css"></h1></li>
+        <li> <h1 class="bi bi-bootstrap"></h1></li>
+      
+       </ul>
+      </div>
+      
+      <div class="col-sm-3"> 
+       <h2>  Languages </h2>
+       <p> Html,  Raw css with frame work bootstrap, & javascript , <br>
+       back-end is not create 
+       , it's temporary used for assignment 
+       
+       </p>
+      </div>
+     
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+                                                                                            </html>
