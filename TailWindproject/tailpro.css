@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navlist {
+    background-color: silver;
+    overflow: hidden;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navlist a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#navlist a:hover {
+    background-color:darkgray;
+    color: white;
+}
+
+.search {
+    flex-grow: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.search input[type="text"] {
+    padding: 5px;
+    margin-right:1px;
+    border: none;
+    font-size: 17px;
+    border-radius: 5px;
+    color: white;
+}
+
+.search button {
+    padding: 6px 12px;
+    background: white;
+    color: green;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.search button i {
+    font-size: 15px;
+}
+.search input:hover {
+    border: 3px solid red;
+background: rgb(121, 152, 121);
+}
+::placeholder:hover {
+    color:white;
+    opacity: 2; /* Firefox */
+  }
+.search button:hover {
+    background: rgb(109, 152, 109);
+    color: white;
+    margin-right:0px;
+}
+
+/* Logo and tag styling */
+.content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content h1 {
+    color: green;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 600px) {
+    #navlist {
+        flex-direction: column;
+        align-items:end;
+    }
+
+    .search {
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+
+    .search input[type="text"] {
+        margin-left: 10px;
+        width: auto;
+    }
+
+    .search button {
+        padding: 4px 8px;
+    }
+
+    .search button i {
+        font-size: 14px;
+    }
+
+    #navlist a {
+        width: 100%;
+        text-align: left;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .search {
+margin-left: 30%;
+    }
+}
+@media screen and (min-width: 1001px) {
+
+    .search {
+margin-left: 30%;
+    }
+}
+
+.heading {
+    font-size: 40px;
+    letter-spacing: 6px;
+    color:gainsboro;
+    margin-left: 50%;
+}
+
+.scroll{
+    background-color: gainsboro;
+    color: blue;
+    font-size: 20px;
+
+}
